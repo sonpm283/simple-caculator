@@ -1,0 +1,65 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: darkgray;
+}
+
+.container {
+    width: 300px;
+    margin: 10px auto;
+}
+
+.screen {
+    height: 70px;
+    width: 100% ;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.item {
+    height: 70px;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+
+.item1 {
+    grid-column: 1/span 2;
+}
+
+.caculator {
+    background: linear-gradient(to bottom left, #2220fe, #7cfbd4);
+    border-radius: 5px;
+}
+
+.screen {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.screen .input {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 40px;
+    z-index: 999;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 1px solid #6fb2f5;
+    display: block;
+    width: 90%;
+    text-align: right;
+    color: #fff;
+    padding-bottom: 20px;
+}
