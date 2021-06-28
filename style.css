@@ -41,7 +41,6 @@ body {
 .caculator {
     background: linear-gradient(to bottom left, #2220fe, #7cfbd4);
     border-radius: 5px;
-    height: 80vh;
 }
 
 .screen {
